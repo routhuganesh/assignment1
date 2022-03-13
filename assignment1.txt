@@ -1,0 +1,165 @@
+//question 1
+using System;
+public class Employee
+{
+    private int Id;
+    private string Name;
+    private string DepartmentName;
+    Employee(int Id,string Name,string DepartmentName)
+    {
+        this.Id=Id;
+        this.Name=Name;
+        this.DepartmentName=DepartmentName;
+    }
+    public int GetId()
+    {
+        return Id;
+    }
+    public string GetName()
+    {
+      return Name;  
+    }
+    public string GetDepartmentName()
+    {
+        return DepartmentName;
+    }
+    public static void Main(string[]args)
+    {
+        Employee obj1=new Employee(123,"Ganesh","backend");
+        Console.WriteLine(obj1.GetId());
+        Console.WriteLine(obj1.GetName());
+        Console.WriteLine(obj1.GetDepartmentName());
+    }
+    
+}
+
+//question 2
+using System;
+public class Employee
+{
+    private int Id;
+    private string Name;
+    private string DepartmentName;
+    Employee(int Id,string Name,string DepartmentName)
+    {
+        this.Id=Id;
+        this.Name=Name;
+        this.DepartmentName=DepartmentName;
+    }
+    public int GetId()
+    {
+        return Id;
+    }
+    public string GetName()
+    {
+      return Name;  
+    }
+    public string GetDepartmentName()
+    {
+        return DepartmentName;
+    }
+    public static void Main(string[]args)
+    {
+        Console.WriteLine("enter your Id:\n");
+        int Id=Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("enter your Name:\n");
+        string Name=Console.ReadLine();
+        Console.WriteLine("enter your DepartmentName:\n");
+        string DepartmentName=Console.ReadLine();
+        Employee obj1=new Employee(Id,Name,DepartmentName);
+        Console.WriteLine(obj1.GetId());
+        Console.WriteLine(obj1.GetName());
+        Console.WriteLine(obj1.GetDepartmentName());
+    }
+}
+
+//question 3
+using System;
+public class Employee
+{
+    private int Id;
+    private string Name;
+    private string DepartmentName;
+    Employee(int Id,string Name,string DepartmentName)
+    {
+        this.Id=Id;
+        this.Name=Name;
+        this.DepartmentName=DepartmentName;
+    }
+    public int GetId()
+    {
+        Console.WriteLine("GetId() method called");
+        return Id;
+    }
+    public string GetName()
+    {
+      Console.WriteLine("GetName() method called");
+      return Name;  
+    }
+    public string GetDepartmentName()
+    {
+        Console.WriteLine("GetDepartName() method called");
+        return DepartmentName;
+    }
+    public static void Main(string[]args)
+    {
+        int Id =Convert.ToInt32(Console.ReadLine());
+        string Name=Console.ReadLine();
+        string DepartmentName=Console.ReadLine();
+        Employee obj1=new Employee(Id,Name,DepartmentName);
+        Console.WriteLine(obj1.GetName());
+    }
+    
+}
+//question 4
+using System;
+public class Employee
+{
+    private int Id;
+    private string Name;
+    private string DepartmentName;
+    Employee(int Id,string Name,string DepartmentName)
+    {
+        this.Id=Id;
+        this.Name=Name;
+        this.DepartmentName=DepartmentName;
+    }
+    public int GetId()
+    {
+        Console.WriteLine("GetId() method called");
+        return Id;
+    }
+    public string GetName()
+    {
+      Console.WriteLine("GetName() method called");
+      return Name;  
+    }
+    public string GetDepartmentName()
+    {
+        Console.WriteLine("GetDepartName() method called");
+        return DepartmentName;
+    }
+    public void update(int Id,string Name,string DepartmentName)
+    {
+        Console.WriteLine("updated Id: "+Id+" updated Name: "+Name+" updated DepartmentName: "+DepartmentName);
+    }
+    void update(string Name,int Id,string DepartmentName)
+    {
+        Console.WriteLine("updated name: "+Name+" updated Id: "+Id+" updated DepartmentName: "+DepartmentName);
+        
+    }
+    public void update(string Name,string DepartmentName,int Id)
+    {
+        Console.WriteLine("updated name: "+Name+" updated DepartmentName: "+DepartmentName+" updated id: "+Id);
+    }
+    public static void Main(string[]args)
+    {
+        int Id =Convert.ToInt32(Console.ReadLine());
+        string Name=Console.ReadLine();
+        string DepartmentName=Console.ReadLine();
+        Employee obj1=new Employee(Id,Name,DepartmentName);
+        Console.WriteLine(obj1.GetName());
+        obj1.update("Ganesh","Backend",1234);
+    }
+    
+}
